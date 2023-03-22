@@ -7,8 +7,6 @@
     <Exec Command="echo # $(PackageId) > $(IntermediateOutputPath)\readme.txt"
           ConsoleToMsBuild="true" />
 
-    <Exec Command="type $(MSBuildThisFileDirectory)ReadMe.md >> $(IntermediateOutputPath)\readme.txt"
-          ConsoleToMsBuild="true" />
   </Target>
 
   <Target Name="PackNuGetReadMe"
